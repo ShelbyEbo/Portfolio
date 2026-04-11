@@ -3,9 +3,10 @@ import { useI18n } from '@/hooks/useI18n'
 import { useInView } from '@/hooks/useInView'
 import { SKILL_GROUPS } from '@/data'
 import * as LucideIcons from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
-function Icon({ name, size = 16, color }: { name: string; size?: number; color?: string }) {
-  const C = (LucideIcons as Record<string, React.ElementType>)[name] ?? LucideIcons.Code
+function Icon({ name, size = 52, color }: { name: string; size?: number; color: string }) {
+  const C = ((LucideIcons as unknown as Record<string, LucideIcon>)[name] ?? LucideIcons.Code) as LucideIcon
   return <C size={size} color={color} />
 }
 
