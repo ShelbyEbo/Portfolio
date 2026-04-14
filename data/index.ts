@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
       en: 'A fundraising platform inspired by the “vaquinha” (crowdfunding) concept, integrated with its own cryptocurrency called VAKS. The project was developed as the final assignment of ft_transcendence, combining a real-time web application, authentication, blockchain/crypto simulation, and sound architectural practices.',
       es: 'Plataforma de recaudación de fondos inspirada en el concepto de “vaquinha” (crowdfunding), integrada con una criptomoneda propia llamada VAKS. El proyecto fue desarrollado como trabajo final de ft_transcendence, combinando una aplicación web en tiempo real, autenticación, simulación de blockchain/cripto y buenas prácticas de arquitectura.',
     },
-    tags: ['Next.js', 'TypeScript', 'Blockchain', 'Docker', '42', 'React'],
+    tags: ['Next.js', 'TypeScript', 'Blockchain', 'Docker', '42', 'React', 'API REST'],
     icon: 'Coins', color: '#9810FA',
     demo: null, repo: 'https://github.com/ohana-creator/ft_transcendence', private: false,
   },
@@ -38,7 +38,7 @@ export const PROJECTS: Project[] = [
       en: 'An educational web platform that allows users to explore physics simulations by adjusting parameters in real time using sliders, with the corresponding equations updating live. The interface features a neumorphic design with support for both light and dark modes.',
       es: 'Una plataforma web educativa que permite explorar simulaciones de física ajustando parámetros en tiempo real mediante controles deslizantes, con las ecuaciones correspondientes actualizándose en vivo. La interfaz utiliza diseño neumórfico con soporte para modo claro y oscuro.',
     },
-    tags: ['TailwindCSS', 'Frame motion', 'React', 'Next.js', 'Neumorphism'],
+    tags: ['TailwindCSS', 'Frame motion', 'React', 'Next.js', 'Neumorphism', 'Prisma', 'PostgreSQL', 'TypeScript', 'Docker'],
     icon: 'Sparkles', color: '#4F7FFF',
     demo: null, repo: 'https://github.com/ShelbyEbo/Vectoria', private: false,
   },
@@ -63,6 +63,17 @@ export const PROJECTS: Project[] = [
     tags: ['HTTP', 'C++', 'HTML', 'CSS', 'JavaScript', 'CGI', 'Cookies'],
     icon: 'Server', color: '#1F3A5F',
     demo: null, repo: 'https://github.com/ShelbyEbo/webserv', private: false,
+  },
+  {
+    name: 'UniBridge',
+    desc: {
+      pt: 'Plataforma académico-profissional que conecta estudantes, empresas e professores num único ecossistema. Desenvolvi a interface frontend com foco em micro-interações, sistema de componentes com neumorfismo e dashboards de impacto social, criando uma experiência fluida que traduz visualmente a missão de aproximar formação e carreira.',
+      en: 'An academic-professional platform connecting students, companies and professors in a single ecosystem. I developed the frontend interface with a focus on micro-interactions, a neumorphic component system and social impact dashboards, crafting a fluid experience that visually translates the mission of bridging education and career.',
+      es: 'Plataforma académico-profesional que conecta estudiantes, empresas y profesores en un único ecosistema. Desarrollé la interfaz frontend con foco en micro-interacciones, un sistema de componentes con neumorfismo y dashboards de impacto social, creando una experiencia fluida que traduce visualmente la misión de acercar formación y carrera.',
+    },
+    tags: ['React', 'Tailwindcss', 'HTML', 'CSS', 'TypeScript', 'Docker'],
+    icon: 'Users', color: '#0097A7',
+    demo: null, repo: 'https://frontend-isptec-iota.vercel.app/', private: false,
   },
   
 ]
