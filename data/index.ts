@@ -9,11 +9,13 @@ export const CONFIG = {
 }
 
 export interface Project {
+  slug:    string
   name:    string
   desc:    Record<Lang, string>
   tags:    string[]
   icon:    string        // lucide icon name
   images?: string[]
+  detailImages?: string[]
   color:   string
   demo:    string | null
   repo:    string | null
@@ -22,6 +24,7 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    slug: 'vaks',
     name: 'ft_transcendence - VAKS',
     desc: {
       pt: 'Plataforma de angariação de fundos inspirada no conceito de vaquinha, integrada a uma criptomoeda própria chamada VAKS. O projeto foi desenvolvido como trabalho final do ft_transcendence, combinando web app em tempo real, autenticação, blockchain/cripto-simulação e boas práticas de arquitetura.',
@@ -36,9 +39,18 @@ export const PROJECTS: Project[] = [
       '/vaks_3.png',
       '/vaks_4.png',
     ],
+    detailImages: [
+      '/vaks_1.png',
+      '/vaks_2.png',
+      '/vaks_3.png',
+      '/vaks_4.png',
+      'https://picsum.photos/seed/vaks-detail-5/1600/1000',
+      'https://picsum.photos/seed/vaks-detail-6/1600/1000',
+    ],
     demo: null, repo: 'https://github.com/ohana-creator/ft_transcendence', private: false,
   },
   {
+    slug: 'vectoria',
     name: 'Vectoria',
     desc: {
       pt: 'Uma plataforma web educativa que permite explorar simulações de física ajustando parâmetros em tempo real via sliders, com as equações correspondentes atualizando ao vivo. A interface usa neumorfismo com suporte a modo claro e escuro.',
@@ -47,9 +59,16 @@ export const PROJECTS: Project[] = [
     },
     tags: ['TailwindCSS', 'Frame motion', 'React', 'Next.js', 'Neumorphism', 'Prisma', 'PostgreSQL', 'TypeScript', 'Docker'],
     icon: 'Sparkles', color: '#4F7FFF',
+    detailImages: [
+      'https://picsum.photos/seed/vectoria-detail-1/1600/1000',
+      'https://picsum.photos/seed/vectoria-detail-2/1600/1000',
+      'https://picsum.photos/seed/vectoria-detail-3/1600/1000',
+      'https://picsum.photos/seed/vectoria-detail-4/1600/1000',
+    ],
     demo: null, repo: 'https://github.com/ShelbyEbo/Vectoria', private: false,
   },
   {
+    slug: 'nasa-farms-navigators',
     name: 'NASA Farms Navigators',
     desc: {
       pt: 'Aplicação mobile desenvolvida com React Native e Expo para agricultores, criada no hackathon NASA Space Apps 2025. Oferece insights em tempo real, ferramentas de gestão agrícola e mapas interativos com tecnologia Mapbox.',
@@ -65,9 +84,18 @@ export const PROJECTS: Project[] = [
       '/nfn_4.jpg',
       '/nfn_5.jpg',
     ],
+    detailImages: [
+      '/nfn_1.jpg',
+      '/nfn_2.jpg',
+      '/nfn_3.jpg',
+      '/nfn_4.jpg',
+      '/nfn_5.jpg',
+      'https://picsum.photos/seed/nfn-detail-6/1600/1000',
+    ],
     demo: null, repo: 'https://github.com/Nasa-FarmNavigators/FarmNavigators-Mobile', private: false,
   },
   {
+    slug: 'webserv',
     name: 'Webserv',
     desc: {
       pt: 'Servidor HTTP implementado em C++98, inspirado na arquitetura do NGINX. Este projeto faz parte do currículo da 42 Luanda e tem como objetivo aprofundar o entendimento do protocolo HTTP, incluindo sockets não bloqueantes, tratamento de requisições, execução de CGI e upload de ficheiros.',
@@ -76,9 +104,15 @@ export const PROJECTS: Project[] = [
     },
     tags: ['HTTP', 'C++', 'HTML', 'CSS', 'JavaScript', 'CGI', 'Cookies'],
     icon: 'Server', color: '#1F3A5F',
+    detailImages: [
+      'https://picsum.photos/seed/webserv-detail-1/1600/1000',
+      'https://picsum.photos/seed/webserv-detail-2/1600/1000',
+      'https://picsum.photos/seed/webserv-detail-3/1600/1000',
+    ],
     demo: null, repo: 'https://github.com/ShelbyEbo/webserv', private: false,
   },
   {
+    slug: 'unibridge',
     name: 'UniBridge',
     desc: {
       pt: 'Plataforma académico-profissional que conecta estudantes, empresas e professores num único ecossistema. Desenvolvi a interface frontend com foco em micro-interações, sistema de componentes com neumorfismo e dashboards de impacto social, criando uma experiência fluida que traduz visualmente a missão de aproximar formação e carreira.',
@@ -92,6 +126,13 @@ export const PROJECTS: Project[] = [
       '/unibridge_2.png',
       '/unibridge_3.png',
       '/unibridge_4.png',
+    ],
+    detailImages: [
+      '/unibridge_1.png',
+      '/unibridge_2.png',
+      '/unibridge_3.png',
+      '/unibridge_4.png',
+      'https://picsum.photos/seed/unibridge-detail-5/1600/1000',
     ],
     demo: null, repo: 'https://frontend-isptec-iota.vercel.app/', private: false,
   },

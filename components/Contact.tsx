@@ -9,8 +9,8 @@ export function Contact() {
   const { ref, inView } = useInView()
 
   const socials = [
-    { Icon: Github,   label: 'GitHub',   text: 'github.com/ShelbyEbo',       href: CONFIG.github },
-    { Icon: Linkedin, label: 'LinkedIn', text: 'linkedin.com/in/orisa-melzira-ebo-aab95a267/',  href: CONFIG.linkedin },
+    { Icon: Github,   label: 'GitHub',   text: 'ShelbyEbo',       href: CONFIG.github },
+    { Icon: Linkedin, label: 'LinkedIn', text: 'Orisa Melzira Ebo',  href: CONFIG.linkedin },
     { Icon: Mail,     label: 'Email',    text: CONFIG.email,                  href: `mailto:${CONFIG.email}` },
   ]
 

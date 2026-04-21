@@ -42,6 +42,10 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'projects.demo':    'Demo',
     'projects.private': 'Privado',
     'projects.github':  'GitHub',
+    'projects.back':    'Voltar aos projectos',
+    'projects.detail':  'Projeto detalhado',
+    'projects.highlights': 'Destaques',
+    'projects.noImages': 'Sem imagens disponíveis',
 
     'contact.label':   'Contacto',
     'contact.title':   'Vamos conversar',
@@ -93,6 +97,10 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'projects.demo':    'Demo',
     'projects.private': 'Private',
     'projects.github':  'GitHub',
+    'projects.back':    'Back to projects',
+    'projects.detail':  'Project details',
+    'projects.highlights': 'Highlights',
+    'projects.noImages': 'No images available',
 
     'contact.label':   'Contact',
     'contact.title':   "Let's talk",
@@ -144,6 +152,10 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'projects.demo':    'Demo',
     'projects.private': 'Privado',
     'projects.github':  'GitHub',
+    'projects.back':    'Volver a los proyectos',
+    'projects.detail':  'Detalles del proyecto',
+    'projects.highlights': 'Destacados',
+    'projects.noImages': 'Sin imágenes disponibles',
 
     'contact.label':   'Contacto',
     'contact.title':   'Hablemos',

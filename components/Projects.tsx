@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { useI18n, type Lang } from '@/hooks/useI18n'
 import { useInView } from '@/hooks/useInView'
 import { PROJECTS } from '@/data'
@@ -107,6 +108,7 @@ function ProjectMedia({
 export function Projects() {
   const { t, lang } = useI18n()
   const { ref, inView } = useInView()
+  const router = useRouter()
 
   const linkBtn: React.CSSProperties = {
     fontSize: '.8rem', fontWeight: 600, padding: '4px 10px', borderRadius: 8,
@@ -134,6 +136,18 @@ export function Projects() {
             <div key={p.name} style={{
               background:'var(--card)', border:'1px solid var(--stroke)',
               borderRadius: 10, overflow:'hidden', transition:'transform .3s, box-shadow .3s',
+              cursor:'pointer',
+            }}
+            role="button"
+            tabIndex={0}
+            aria-label={`Abrir detalhes de ${p.name}`}
+            title="Abrir detalhes"
+            onClick={() => router.push(`/projects/${p.slug}`)}
+            onKeyDown={e => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault()
+                router.push(`/projects/${p.slug}`)
+              }
             }}
             onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.transform='translateY(-6px)'; el.style.boxShadow='0 20px 40px rgba(0,0,0,.15)' }}
             onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.transform='none'; el.style.boxShadow='none' }}>
@@ -165,6 +179,7 @@ export function Projects() {
                 <div style={{ display:'flex', gap:'.75rem', alignItems:'center', flexWrap:'wrap' }}>
                   {p.demo && (
                     <a href={p.demo} target="_blank" rel="noopener noreferrer"
+                      onClick={e => e.stopPropagation()}
                       style={{ ...linkBtn, color: p.color, borderColor: p.color + '55' }}>
                       <ExternalLink size={12} /> {t('projects.demo')}
                     </a>
@@ -176,6 +191,7 @@ export function Projects() {
                   )}
                   {p.repo && !p.private && (
                     <a href={p.repo} target="_blank" rel="noopener noreferrer"
+                      onClick={e => e.stopPropagation()}
                       style={{ ...linkBtn, color:'var(--txt2)' }}>
                       <Github size={12} /> {t('projects.github')}
                     </a>
