@@ -13,6 +13,7 @@ export interface Project {
   desc:    Record<Lang, string>
   tags:    string[]
   icon:    string        // lucide icon name
+  images?: string[]
   color:   string
   demo:    string | null
   repo:    string | null
@@ -29,6 +30,12 @@ export const PROJECTS: Project[] = [
     },
     tags: ['Next.js', 'TypeScript', 'Blockchain', 'Docker', '42', 'React', 'API REST'],
     icon: 'Coins', color: '#9810FA',
+    images: [
+      '/vaks_1.png',
+      '/vaks_2.png',
+      '/vaks_3.png',
+      '/vaks_4.png',
+    ],
     demo: null, repo: 'https://github.com/ohana-creator/ft_transcendence', private: false,
   },
   {
@@ -51,6 +58,13 @@ export const PROJECTS: Project[] = [
     },
     tags: ['React Native', 'Expo Dev', 'Figma', 'TypeScript'],
     icon: 'Tractor', color: '#128C7E',
+    images: [
+      '/nfn_1.jpg',
+      '/nfn_2.jpg',
+      '/nfn_3.jpg',
+      '/nfn_4.jpg',
+      '/nfn_5.jpg',
+    ],
     demo: null, repo: 'https://github.com/Nasa-FarmNavigators/FarmNavigators-Mobile', private: false,
   },
   {
@@ -73,6 +87,12 @@ export const PROJECTS: Project[] = [
     },
     tags: ['React', 'Tailwindcss', 'HTML', 'CSS', 'TypeScript', 'Docker'],
     icon: 'Users', color: '#0097A7',
+    images: [
+      '/unibridge_1.png',
+      '/unibridge_2.png',
+      '/unibridge_3.png',
+      '/unibridge_4.png',
+    ],
     demo: null, repo: 'https://frontend-isptec-iota.vercel.app/', private: false,
   },
   
