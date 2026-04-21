@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { useI18n, type Lang } from '@/hooks/useI18n'
 import { CONFIG } from '@/data'
@@ -17,6 +17,7 @@ export function Navbar() {
   const [mounted,  setMounted]  = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [open,     setOpen]     = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setMounted(true)
@@ -26,9 +27,13 @@ export function Navbar() {
   }, [])
 
   useEffect(() => {
-    const close = () => setOpen(false)
-    document.addEventListener('click', close)
-    return () => document.removeEventListener('click', close)
+    const close = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setOpen(false)
+      }
+    }
+    document.addEventListener('pointerdown', close)
+    return () => document.removeEventListener('pointerdown', close)
   }, [])
 
   const links = [
@@ -89,8 +94,9 @@ export function Navbar() {
       <div style={{ display: 'flex', alignItems: 'center', gap: '.75rem' }}>
 
         {/* Lang dropdown */}
-        <div style={{ position: 'relative' }} onClick={e => e.stopPropagation()}>
+        <div ref={dropdownRef} style={{ position: 'relative' }}>
           <button
+            type="button"
             onClick={() => setOpen(o => !o)}
             style={{ ...btnStyle, gap: 6, padding: '0 10px', width: 'auto', borderRadius: 100, fontSize: '.8rem', fontWeight: 600 }}>
             <span className={`fi ${cur.fi}`} style={{ width: 18, height: 13 }} />
@@ -105,7 +111,7 @@ export function Navbar() {
               boxShadow: '0 8px 24px rgba(0,0,0,.15)',
             }}>
               {LANGS.map(l => (
-                <button key={l.code}
+                <button key={l.code} type="button"
                   onClick={() => { setLang(l.code); setOpen(false) }}
                   style={{
                     width: '100%', padding: '8px 14px', background: 'none', border: 'none',
@@ -127,7 +133,7 @@ export function Navbar() {
 
         {/* Theme toggle */}
         {mounted && (
-          <button style={btnStyle}
+          <button type="button" style={btnStyle}
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = 'var(--card2)' }}
             onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = 'var(--card)' }}>

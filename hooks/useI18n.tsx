@@ -10,13 +10,14 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'nav.projects': 'Projetos',
     'nav.contact':  'Contacto',
 
-    'hero.label': 'Frontend Developer',
+    'hero.greeting': 'Olá, eu sou a',
+    'hero.label': 'Desenvolvedora Frontend',
     'hero.name':  'Melzira Ebo',
     'hero.desc':  'Desenvolvedora frontend apaixonada por criar experiências digitais modernas, acessíveis e memoráveis.',
     'hero.cta1':  'Ver projetos',
     'hero.cta2':  'Falar comigo',
     'hero.badge': '✦ Frontend Dev',
-    'hero.roles': ['Frontend Developer','Blockchain Enthusiast','Problem Solver','42 Student'] as unknown as string,
+    'hero.roles': ['Desenvolvedora Frontend','Entusiasta Blockchain','Solucionadora de problemas','Estudante 42'] as unknown as string,
 
     'about.label': 'Sobre mim',
     'about.title': 'Quem sou eu?',
@@ -51,7 +52,7 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'contact.send':    'Enviar mensagem',
     'contact.sent':    'Enviado!',
 
-    'footer.copy': '© 2026 O Teu Nome. Feito com ♥',
+    'footer.copy': 'Feito com ',
     'footer.top':  '↑ Topo',
   },
   en: {
@@ -60,6 +61,7 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'nav.projects': 'Projects',
     'nav.contact':  'Contact',
 
+    'hero.greeting': 'Hello, I am',
     'hero.label': 'Frontend Developer',
     'hero.name':  'Melzira Ebo',
     'hero.desc':  'Frontend developer passionate about creating modern, accessible and memorable digital experiences.',
@@ -101,7 +103,7 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'contact.send':    'Send message',
     'contact.sent':    'Sent!',
 
-    'footer.copy': '© 2026 Your Name. Made with ♥',
+    'footer.copy': 'Made with ',
     'footer.top':  '↑ Top',
   },
   es: {
@@ -110,13 +112,14 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'nav.projects': 'Proyectos',
     'nav.contact':  'Contacto',
 
+    'hero.greeting': 'Hola, soy',
     'hero.label': 'Desarrolladora Frontend',
     'hero.name':  'Melzira Ebo',
     'hero.desc':  'Desarrolladora frontend apasionada por crear experiencias digitales modernas, accesibles y memorables.',
     'hero.cta1':  'Ver proyectos',
     'hero.cta2':  'Hablar conmigo',
     'hero.badge': '✦ Frontend Dev',
-    'hero.roles': ['Desarrolladora Frontend','Entusiasta Blockchain','Problem Solver','Estudiante 42'] as unknown as string,
+    'hero.roles': ['Desarrolladora Frontend','Entusiasta Blockchain','Solucionadora de problemas','Estudiante 42'] as unknown as string,
 
     'about.label': 'Sobre mí',
     'about.title': '¿Quién soy?',
@@ -151,7 +154,7 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'contact.send':    'Enviar mensaje',
     'contact.sent':    '¡Enviado!',
 
-    'footer.copy': '© 2026 Tu Nombre. Hecho con ♥',
+    'footer.copy': 'Hecho con ',
     'footer.top':  '↑ Arriba',
   },
 }

@@ -65,7 +65,7 @@ export function Hero() {
             fontSize: 'clamp(3rem,7vw,5.5rem)', lineHeight: .95,
             letterSpacing: '-0.04em', color: 'var(--txt)', marginBottom: '1.5rem',
           }}>
-            Olá, eu sou<br />
+            {t('hero.greeting')}<br />
             <span style={{ color: 'var(--accent)' }}>{t('hero.name')}</span>
           </h1>
 
@@ -139,6 +139,7 @@ export function Hero() {
             display:'flex', alignItems:'center', justifyContent:'center',
             overflow:'hidden', position:'relative',
           }}>
+            <img src="/avatar.png" alt="Avatar" style={{ width:'100%', height:'100%', objectFit:'cover' }} />
           </div>
           {/* badge */}
           <div style={{

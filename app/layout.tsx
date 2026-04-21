@@ -3,7 +3,7 @@ import './globals.css'
 import { Providers } from './providers'
 
 export const metadata: Metadata = {
-  title: 'Portfólio',
+  title: 'Melzira\'s Portfolio',
   description: 'Frontend & Blockchain Developer',
 }
 

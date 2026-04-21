@@ -19,7 +19,7 @@ export function Footer() {
 
       <span style={{ fontSize:'.82rem', color:'var(--txt2)', display:'flex', alignItems:'center', gap:4 }}>
         © 2026 <span style={{ color:'var(--accent)', fontWeight:600 }}>{CONFIG.name}</span>.
-        &nbsp;Feito com <Heart size={13} fill="var(--accent)" color="var(--accent)" />
+        &nbsp;{t('footer.copy')} <Heart size={13} fill="var(--accent)" color="var(--accent)" />
       </span>
 
       <a href="#home" style={{
