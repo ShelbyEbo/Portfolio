@@ -130,7 +130,7 @@ export const PROJECTS: Project[] = [
       '/unibridge_3.png',
       '/unibridge_4.png',
     ],
-    demo: null, repo: 'https://frontend-isptec-iota.vercel.app/', private: false,
+   repo: 'https://github.com/joissonm1/frontend-isptec', demo: 'https://frontend-isptec-iota.vercel.app/', private: false,
   },
   
 ]

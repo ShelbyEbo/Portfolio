@@ -190,11 +190,11 @@ export function Projects() {
                     </span>
                   )}
                   {p.repo && !p.private && (
-                    <a href={p.repo} target="_blank" rel="noopener noreferrer"
-                      onClick={e => e.stopPropagation()}
-                      style={{ ...linkBtn, color:'var(--txt2)' }}>
-                      <Github size={12} /> {t('projects.github')}
-                    </a>
+                      <a href={p.repo} target="_blank" rel="noopener noreferrer"
+                        onClick={e => e.stopPropagation()}
+                        style={{ ...linkBtn, color:'var(--txt2)' }}>
+                        <Github size={12} /> {t('projects.github')}
+                      </a>        
                   )}
                 </div>
               </div>
