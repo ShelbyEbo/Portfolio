@@ -4,12 +4,12 @@ import { Providers } from './providers'
 
 export const metadata: Metadata = {
   title: 'Melzira\'s Portfolio',
-  description: 'Frontend & Blockchain Developer',
+  description: 'Frontend Developer',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body>
         <Providers>{children}</Providers>
       </body>

@@ -175,7 +175,7 @@ interface Ctx { lang: Lang; setLang: (l: Lang) => void; t: (k: string) => string
 const I18nCtx = createContext<Ctx | undefined>(undefined)
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>('pt')
+  const [lang, setLang] = useState<Lang>('en')
   const t = (k: string) => {
     const v = translations[lang][k]
     return Array.isArray(v) ? v.join(', ') : (v as string) ?? k
