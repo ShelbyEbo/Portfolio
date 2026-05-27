@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
       'https://picsum.photos/seed/vectoria-detail-3/1600/1000',
       'https://picsum.photos/seed/vectoria-detail-4/1600/1000',
     ],
-    demo: null, repo: 'https://github.com/ShelbyEbo/Vectoria', private: false,
+    demo: 'https://www.runvectoria.me/', repo: 'https://github.com/ShelbyEbo/Vectoria', private: false,
   },
   {
     slug: 'nasa-farms-navigators',
