@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [
       '/vaks_3.png',
       '/vaks_4.png',
     ],
-    demo: null, repo: 'https://github.com/ohana-creator/ft_transcendence', private: false,
+    demo: 'https://vaksy.vercel.app/', repo: 'https://github.com/ohana-creator/ft_transcendence', private: false,
   },
   {
     slug: 'vectoria',
