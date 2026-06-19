@@ -79,7 +79,7 @@ const translations: Record<Lang, Record<string, string | string[]>> = {
     'about.p1':    "I'm a frontend developer passionate about building beautiful and functional interfaces. Trained at 42, I have experience with the most modern technologies.",
     'about.p2':    'I love challenges, learn fast and adapt easily to new environments and technologies. Currently exploring the world of blockchain and Web3.',
     'about.p3':    "When I'm not coding, I'm exploring design, playing video games or learning something completely new.",
-    'about.stat1': 'School 42',
+    'about.stat1': '42 School',
     'about.stat2': 'Completed projects',
     'about.stat3': 'Languages',
     'about.stat4': 'Curiosity',
