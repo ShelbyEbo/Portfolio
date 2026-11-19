@@ -2,7 +2,7 @@ import type { Lang } from '@/hooks/useI18n'
 
 export const CONFIG = {
   name:     'Melzira Ebo',
-  initials: 'dev.',
+  initials: 'MEL.',
   email:    'shelbyebo1711@gmail.com',
   github:   'https://github.com/ShelbyEbo',
   linkedin: 'https://linkedin.com/in/orisa-melzira-ebo-aab95a267/',
