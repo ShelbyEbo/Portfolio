@@ -132,7 +132,18 @@ export const PROJECTS: Project[] = [
     ],
    repo: 'https://github.com/joissonm1/frontend-isptec', demo: 'https://frontend-isptec-iota.vercel.app/', private: false,
   },
-  
+  {
+    slug: 'beeznoo',
+    name: 'Beezno',
+    desc: {
+        pt: 'Plataforma de aluguer que conecta pessoas que procuram equipamentos a quem deseja disponibilizá-los para aluguer. Desenvolvi a interface frontend, criando uma experiência intuitiva e responsiva que simplifica a ligação entre arrendatários e arrendadores.',
+        en: 'A rental platform connecting people looking for equipment with those who want to make it available for rent. I developed the frontend interface, creating an intuitive and responsive experience that simplifies the connection between renters and equipment owners.',
+        es: 'Plataforma de alquiler que conecta a personas que buscan equipos con quienes desean ponerlos a disposición para alquilar. Desarrollé la interfaz frontend, creando una experiencia intuitiva y adaptable que simplifica la conexión entre arrendatarios y propietarios de equipos.',    
+    },
+    tags: ['React', 'Tailwindcss', 'HTML', 'CSS', 'TypeScript', 'Docker', 'Next.js'],
+    icon: 'KeyRound', color: '#0E3B2C',
+   repo: 'https://github.com/parcidio/Kubiko', demo: 'https://www.beeznoo.ao', private: false,
+  },
 ]
 
 export interface SkillGroup {
